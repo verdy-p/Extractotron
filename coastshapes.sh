@@ -2,7 +2,7 @@
 shp2zip()
 {
   ogr2ogr -spat $2 $3 $4 $5 -t_srs EPSG:900913 ex/merc/$1.shp ex/wgs84/processed_p.shp
-  zip -j - ex/merc/$1.??? > ex/$city.shp.zip
+  zip -j - ex/merc/$1.??? > ex/$1.shp.zip
 }
 shp2zip amsterdam             4.465   52.163     5.347  52.629
 shp2zip ankara               32.105   39.439    33.509  40.372
